@@ -27,11 +27,20 @@ Make sure you have the following installed:
    git clone https://github.com/KentHHarris/industrial-energy-site
    cd https://github.com/KentHHarris/industrial-energy-site
 
-### Install dependencies
-```npm run install```
-
 ### Running the application
 ```
-npm run build
-npm run start
+npm run exec
 ```
+
+#### This will...
+1. Install dependencies
+   ```bash
+   npm run install
+
+2. Build the application
+   ```bash
+   npm run build
+
+3. Run the application
+   ```bash
+   npm run start

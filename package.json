@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start -p 8000",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "exec": "npm install && npm run build && npm run start"
   },
   "dependencies": {
     "@react-three/drei": "^9.108.1",
