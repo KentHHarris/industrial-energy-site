@@ -37,5 +37,3 @@ next-env.d.ts
 
 local_assets
 /prisma
-Dockerfile
-docker-compose.yml

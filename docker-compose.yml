@@ -1,0 +1,8 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: web-app:latest
+    ports:
+      - "8000:8000"
