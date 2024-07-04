@@ -8,26 +8,50 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--background-start-rgb);
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+.composer-container::before {
+  content: "";
+  background-image: url('/powerplant-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+input,
+select {
+  @apply p-2.5 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg text-sm;
+}
+
+@media screen and (max-width: 768px) {
+
+  input,
+  select {
+    @apply rounded-full p-1;
+  }
+
+}
+
+input:focus,
+select:focus {
+  @apply ring-blue-500 border-blue-500;
 }

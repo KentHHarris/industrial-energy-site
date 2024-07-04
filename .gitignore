@@ -34,3 +34,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+local_assets
+/prisma
+Dockerfile
+docker-compose.yml
